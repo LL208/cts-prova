@@ -1,0 +1,46 @@
+button {
+    position: fixed;
+    border-radius: 100px;
+    bottom: 50px;
+    right: 50px;
+    padding: 30px;
+    background-color: #385A5F;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    animation: fadeInRight 1s ease-in-out;
+
+}
+
+button:hover {
+    background-color: #38C35D;
+    transform: scale(1.1);
+}
+
+
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(60px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+
+  button.reverse {
+    animation: fadeOutRight 1s ease-in-out;
+}
+
+@keyframes fadeOutRight {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(120px);
+    }
+}

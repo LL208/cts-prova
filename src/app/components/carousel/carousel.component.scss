@@ -1,0 +1,22 @@
+img{
+    width: 100%;
+    height: 600px;
+}  
+.carousel-caption {
+font-size: 18px;
+}
+  
+  @keyframes fadeInLeft{
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .a-right{
+    animation: fadeInLeft 0.8s linear;
+  }
